@@ -1,0 +1,257 @@
+* {
+    font-family: 'League Spartan','Poppins';
+}
+body {
+    margin: 0;
+    padding: 2% 4%;
+    background: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-position: top left -500px, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+}
+.top-hero {
+    display: flex;
+    justify-content: space-between;
+}
+.hero-main-text {
+    width: 45%;
+}
+.hero-main-text p {
+    color: hsl(303, 10%, 53%);
+}
+.hero-header {
+    font-size: 38px;
+    color: hsl(300, 43%, 22%);
+    padding-right: 28%;
+    text-align: left;
+}
+.review-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50%;
+}
+.reviews {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 8px;
+    padding: 0.4% 0px 0.4% 8%;
+    margin: 3% 1% 0% 0%;
+    width: 400px;
+    animation: slide-in 0.2s ease-in-out 1 backwards;
+}
+.reviews:nth-child(1) {
+    margin: 3% 16% 0% 0%;
+}
+.reviews:nth-child(2) {
+    margin: 3% 8% 0% 0%;
+    animation-delay: 0.1s;
+}
+.reviews:nth-child(3) {
+    animation-delay: 0.2s;
+}
+@keyframes slide-in {
+    from {
+        transform: translateX(110%);
+    }
+}
+.reviews p {
+    font-size: 14px;
+    font-weight: 600;
+    color: hsl(300, 43%, 22%);
+    margin: 10px 0px 10px 30px;
+}
+.testimonial-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 1%;
+    height: auto;
+}
+.testimonial-card {
+    background-color: hsl(300, 43%, 22%);
+    width: 27%;
+    border-radius: 8px;
+    padding: 3% 2% 2% 2%;
+    color: white;
+    font-weight: 400;
+    animation: slide-up 0.2s ease-in-out 1 backwards;
+}
+.testimonial-card:nth-child(2) {
+    margin: 2% 0px 0px 0px;
+    animation-delay: 0.1s;
+}
+.testimonial-card:nth-child(3) {
+    margin: 4% 0px 0px 0px;
+    animation-delay: 0.2s;
+}
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+    }
+}
+.tag {
+    color: hsl(333, 80%, 67%);
+}
+.testimonial-card p {
+    font-size: 14px;
+}
+.user {
+    display: flex;
+    align-items: center;
+}
+.user h4 {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.profile-picture {
+    border-radius: 50px;
+    height: 12%;
+    width: 12%;
+    margin-right: 6%;
+}
+@media screen and (max-width: 880px) {
+    body {
+        padding: 2% 3%;
+        background: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+        background-position: top left, bottom right;
+        background-repeat: no-repeat, no-repeat;
+        background-size: contain, contain;
+    }
+    .top-hero {
+        display: flex;
+        justify-content: space-between;
+    }
+    .hero-main-text {
+        width: 50%;
+    }
+    .hero-header {
+        font-size: 35px;
+        padding-right: 0%;
+    }
+    .review-section {
+        width: 43%;
+        align-items: flex-end;
+    }
+    .reviews {
+        padding: 1% 0px 1% 8%;
+        margin: 3% 1% 0% 0%;
+        width: 100%;
+    }
+    .reviews:nth-child(1) {
+        margin: 3% 0% 1% 0%;
+    }
+    .reviews:nth-child(2) {
+        margin: 3% 0% 1% 0%;
+    }
+    .reviews:nth-child(3) {
+        margin: 3% 0% 1% 0%;
+    }
+    .reviews p {
+        font-size: 13px;
+    }
+    .testimonial-card {
+        width: 28%;
+    }
+    .testimonial-card:nth-child(2) {
+        margin: 0% 0px 0px 0px;
+    }
+    .testimonial-card:nth-child(3) {
+        margin: 0% 0px 0px 0px;
+    }
+    .tag {
+        color: hsl(333, 80%, 67%);
+    }
+    .testimonial-card p {
+        font-size: 14px;
+    }
+    .profile-picture {
+        border-radius: 50px;
+        height: 20%;
+        width: 20%;
+        margin-right: 6%;
+    }
+}
+@media screen and (max-width: 540px) {
+    body {
+        padding: 4% 5%;
+    }
+    .top-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hero-main-text {
+        width: 100%;
+        text-align: center;
+    }
+    .hero-header {
+        font-size: 35px;
+        padding: 0% 6%;
+        text-align: center;
+    }
+    .review-section {
+        width: 100%;
+        align-items: center;
+    }
+    .reviews {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2% 0px 1% 0%;
+        margin: 2% 0% 2% 0%;
+        width: 100%;
+    }
+    .reviews:nth-child(1) {
+        margin: 1% 0% 2% 0%;
+    }
+    .reviews:nth-child(2) {
+        margin: 2% 0% 2% 0%;
+    }
+    .reviews:nth-child(3) {
+        margin: 2% 0% 2% 0%;
+    }
+    .reviews p {
+        font-size: 13px;
+        margin: 1% 0%;
+    }
+    .testimonial-section {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 7%;
+    }
+    .testimonial-card {
+        width: 92%;
+        padding: 4% 4%;
+        margin: 2% 0%;
+        animation: slide-in 0.2s ease-in-out 1 backwards;
+    }
+    .testimonial-card:nth-child(2) {
+        margin: 2% 0%;
+    }
+    .testimonial-card:nth-child(3) {
+        margin: 2% 0%;
+    }
+    .user h4 {
+        margin: 0px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .tag {
+        color: hsl(333, 80%, 67%);
+    }
+    .testimonial-card p {
+        font-size: 13px;
+    }
+    .profile-picture {
+        border-radius: 50px;
+        height: 8%;
+        width: 8%;
+        margin-right: 3%;
+    }
+}
